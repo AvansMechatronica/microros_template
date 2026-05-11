@@ -10,7 +10,6 @@ Een volledig functionele **micro-ROS template** voor ESP32 met publisher, subscr
 - [Hardware Vereisten](#hardware-vereisten)
 - [Software Vereisten](#software-vereisten)
 - [Installatie](#installatie)
-- [Quick Start](#quick-start)
 - [Hoe het Werkt](#hoe-het-werkt)
 - [ROS 2 Commando's](#ros-2-commando's)
 - [Onderwerpen Gebruiken](#onderwerpen-gebruiken)
@@ -169,54 +168,7 @@ platformio run
 platformio run --target upload
 ```
 
----
-
-## Quick Start
-
-### Stap 1: ESP32 Programmeren
-
-```bash
-platformio run
-platformio run --target upload
-```
-
-Verwachte output:
-```
-Building .pio/build/esp32-C3/firmware.elf
-Linking .pio/.../firmware.elf
-  TEXT    DATA     BSS     DEC     HEX FILENAME
- ...
-Uploading .pio/build/esp32-C3/firmware.bin
-...
-Hard resetting via RTS pin...
-```
-
-### Stap 2: Seriële Monitor Openen (Debugging)
-
-```bash
-platformio device monitor --speed 115200
-```
-
-Je ziet:
-```
-===============================================
-MICRO-ROS TEMPLATE OPSTARTEN
-===============================================
-
-Initialiseer geheugen-allocator...
-Initialiseer ROS 2 support context...
-...
-✓ Setup voltooid! Systeem draait normaal.
-  Node naam:     microros_template_node
-  Publisher:     /template_publisher (Int16)
-  Subscriber:    /template_subscriber (Float32)
-  Timer:         1000 ms (1 Hz)
-
-Wachtend op ROS 2-berichten via micro-ROS agent...
-===============================================
-```
-
-### Stap 3: Micro-ROS Agent Starten (op Host-PC)
+### Stap 6: Micro-ROS Agent Starten (op Host-PC)
 
 In een **nieuwe terminal** op je Linux/macOS machine:
 
@@ -233,7 +185,7 @@ Verwachte output:
 [INFO] Waiting for subscribers...
 ```
 
-### Stap 4: ROS 2 Topics Controleren
+### Stap 7: ROS 2 Topics Controleren
 
 In een **derde terminal**:
 
@@ -253,7 +205,7 @@ ros2 node list
 #   /rostopic_...
 ```
 
-### Stap 5: Publisher Data Ontvangen
+### Stap 8: Publisher Data Ontvangen
 
 ```bash
 ros2 topic echo /template_publisher
@@ -267,7 +219,7 @@ data: 42
 ---
 ```
 
-### Stap 6: Subscriber Data Versturen
+### Stap 9: Subscriber Data Versturen
 
 In een **vierde terminal**:
 

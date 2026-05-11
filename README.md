@@ -759,20 +759,6 @@ microros_template/
 
 ---
 
-## Licentie
 
-[Vul hier je licentie in]
-
----
-
-## Vragen of Issues?
-
-📧 **Contact**: [je email]
-
-🐛 **Bug Reports**: [link naar issue tracker]
-
-💡 **Feature Requests**: [link naar discussions]
-
----
 
 **Veel succes met je micro-ROS project! 🚀**

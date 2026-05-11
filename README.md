@@ -120,7 +120,7 @@ Dit project implementeert een **micro-ROS node** op ESP32 met:
 ### 1. Repository Clonen
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/AvansMechatronica/microros_template
 cd microros_template
 ```
 
